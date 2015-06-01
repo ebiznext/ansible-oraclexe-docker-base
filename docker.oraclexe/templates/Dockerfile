@@ -1,4 +1,4 @@
-FROM ansible/ubuntu14.04-ansible
+FROM {{ansible_base_image}}
 
 # Add playbooks to the Docker image
 ADD site.yml /tmp/site.yml
